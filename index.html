@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber - Barbers & Hair Cutting</title>
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="preload" as="image" href="./assets/hero-banner.jpg">
+    <link rel="stylesheet" href="flaticon.min.css">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -51,10 +51,10 @@
                 <div class="row">
                     <div class="header__wrapper">
                         <div class="header__title white">BARBERS & HAIR CUTTING</div>
-                        <div class="header__description white">
+                        <p class="header__description white">
                             Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                             ut labore et dolore magna aliqua suspendisse ultrices gravida
-                        </div>
+                        </p>
                         <button class="header__button white">EXPLORE OUR SERVICES -></button>
                     </div>
                 </div>
@@ -62,15 +62,234 @@
         </header>
     </section>
 
-    <section id="services ">
+    <section id="services">
         <div class="container">
             <div class="row">
-
+                <div class="section__description">
+                    <h1 class="section__title">SERVICE WE PROVIDE</h1>
+                    <p class="section__subtitle gray">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+                </div>
+                <div class="services__option-container">
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-salon"></i>
+                        </div>
+                        <a href="#" class="services__heading">Hair Cutting Style</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-shampoo"></i>
+                        </div>
+                        <a href="#" class="services__heading">Hair Washing</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-hot-stone"></i>
+                        </div>
+                        <a href="#" class="services__heading">Body Treatments</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-treatment"></i>
+                        </div>
+                        <a href="#" class="services__heading">Beauty & Spa</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-shaving-razor"></i>
+                        </div>
+                        <a href="#" class="services__heading">Stylist Shaving</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="services__option">
+                        <div class="services__icon">
+                            <i class="flaticon-hair-dye"></i>
+                        </div>
+                        <a href="#" class="services__heading">Multi Hair Colors</a>
+                        <p class="services__subheading">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="services__button">
+                            <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="arrow"></ion-icon>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
 
+    <section id="pricing" style="background-image: url('./assets/pricing-bg.jpg')" class="background__image2">
+        <div class="container">
+            <div class="row">
+                <div class="section__description">
+                    <h1 class="section__title white">GREAT PRICING PLANS</h1>
+                    <p class="section__subtitle white">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+                </div>
+                <div class="pricing__option-container">
+                    <ul class="pricing__service-list">
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-beauty-salon"></i>
+                                </div>
+                                <p class="pricing__button-text">ALL PRICING</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-relax"></i>
+                                </div>
+                                <p class="pricing__button-text">BEAUTY & SPA</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-massage"></i>
+                                </div>
+                                <p class="pricing__button-text">BODY TREATMENTS</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-spa"></i>
+                                </div>
+                                <p class="pricing__button-text">FACE WASHING</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-yoga"></i>
+                                </div>
+                                <p class="pricing__button-text">MEDITATIONS</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="pricing__button">
+                                <div class="pricing__icon">
+                                    <i class="flaticon-razor-blade"></i>
+                                </div>
+                                <p class="pricing__button-text">SHAVING</p>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallary">
+        <div class="container">
+            <div class="row">
+                <div class="gallary__wrapper">
+                    <div class="section__description gallary__description">
+                        <h1 class="section__title gallary__title">LATEST PHOTO GALLERY</h1>
+                        <p class="section__subtitle gallary__subtitle gray">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+                    </div>
+                    <button class="gallary__button">
+                        <p class="gallary__button--description white">
+                            EXPLORE MORE GALLARY 
+                        </p> 
+                        <ion-icon name="arrow-forward" aria-hidden="true" role="img" class="gallary__arrow white"></ion-icon>
+                    </button>
+                </div>
+                <div class="gallary__imgs">
+                        <figure class="gallary__img--wrapper">
+                            <img src="assets/gallery-1.jpg" alt="" class="gallary__img">
+                        </figure>
+                    <figure class="gallary__img--wrapper">
+                        <img src="assets/gallery-2.jpg" alt="" class="gallary__img">
+                    </figure>
+                    <figure class="gallary__img--wrapper">
+                        <img src="assets/gallery-3.jpg" alt="" class="gallary__img">
+                    </figure>
+                    <figure class="gallary__img--wrapper">
+                        <img src="assets/gallery-4.jpg" alt="" class="gallary__img">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="appointment__wrapper">
+                    <figure class="appointment__figure">
+                        <img src="./assets/appoin-banner-1.jpg" alt="" class= "appointment__img1">
+                    </figure>
+                    <div class="form__wrapper">
+                        <div class="section__description">
+                            <h1 class="section__title white appointment__title">MAKE APPOINTMENT</h1>
+                            <p class="section__subtitle white">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+                        </div>
+                        <form id="appointment__form">
+                            <div class="form__line1">
+                                <div class="form__item">
+                                    <!-- <label class="form__item--label">Name</label> -->
+                                    <input placeholder='Your Full Name' class="input" name="user_name" type="text" ></input>
+                                </div>
+                                <div class="form__item">
+                                    <!-- <label class="form__item--label">Email</label> -->
+                                    <input placeholder='Email Address' class="input" name="user_email" type="email" ></input>
+                                </div>
+                            </div>
+                            <div class="form__line2">
+                                <div class="form__item">
+                                    <!-- <label class="form__item--label">Phone Number</label> -->
+                                    <input placeholder='Phone Number' class="input" name="user_number" type="text" ></input>
+                                </div>
+                                <!-- <label class="form__item--dropdown">Select Category</label> -->
+                                <select id="form__category" name="category">
+                                <option value="" disabled selected hidden>Select Category</option>
+                                  <option value="Beauty & Spa">Beauty & Spa</option>
+                                  <option value="Body Massage">Body Massage</option>
+                                  <option value="Shaving & Facial">Shaving & Facial</option>
+                                  <option value="Hair Color">Hair Color</option>
+                                </select>
+                            </div>
+                            <div class="form__line3">
+                                <div class="form__item form__item--calendar">
+                                    <!-- <label class="form__item--label">Phone Number</label> -->
+                                    <input placeholder='Date' class="input input__calendar" name="user_date" type="date" style="display:table-cell; width:100%" ></input>
+                                </div>
+                            </div>
+                            <div class="form__line4">
+                                <div class="form__item">
+                                    <!-- <label class="form__item--label">Message</label> -->
+                                    <textarea placeholder='Write Message' class="input" name="message" type="text" style="width:100%" ></textarea>
+                                </div>
+                            </div>
+                            <button id="appointment__submit" class="form__submit">Send it my way</button>
+                        </form>
+                    </div>
+                    <figure class="appointment__figure">
+                        <img src="./assets/appoin-banner-2.jpg" alt="" class= "appointment__img2">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </body>
