@@ -41,6 +41,7 @@ button{
   cursor: pointer;
   padding: 16px 40px;
   letter-spacing: 1px;
+  transition: all 400ms ease;
 }
 
 .gold{
@@ -130,6 +131,7 @@ nav{
   font-size: 16px;
   font-weight: 700;
   padding: 10px;
+  transition: 400ms ease;
 }
 
 .nav__button{
@@ -371,6 +373,7 @@ nav{
 }
 
 .gallary__arrow{ 
+  margin-left: 6px;;
   display: flex;
   font-size: 16px;
 }
@@ -412,10 +415,15 @@ nav{
   margin-top: 48px;
 } */
 
+
 .form__wrapper{
   background-color: #D5A153;
   padding: 50px;
   width: 100%;
+}
+
+.appointment__img1, .appointment__img2{
+  height: 100%;
 }
 
 #appointment__form{
@@ -477,9 +485,180 @@ nav{
   width: 100%;
 }
 
-textarea{
+.message__box{
   width: 100%;
 }
 
+textarea{
+  resize: vertical;
+}
 
+#appointment__submit{
+  background-color: #D5A153;
+  border-color: white;
+  border-radius: 4px;
+  border-style: double;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms ease;
+}
 
+.appointment__submit--text{
+  transition: all 400ms ease;
+}
+
+.appointment__arrow{
+  margin-left: 6px;;
+  display: flex;
+  font-size: 16px;
+}
+
+/* FOOTER */
+
+.background__image3{
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-color: hsl(0, 0%, 12%)
+}
+
+.footer__container{
+  padding-top: 0;
+}
+
+.footer__top{
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.footer__logo-wrapper, .footer__email{
+  padding: 48px 56px;
+  border-color:hsla(0, 0%, 100%, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  display: flex;
+}
+
+.footer__logo-wrapper{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__email-box{
+  width: 100%;
+  padding: 8px 16px 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid lightgrey;
+  border-radius: 6px;
+  transition: all 400ms ease;
+  background-color: white;
+}
+
+.footer__email--custom{
+  padding-right: 96px;
+  font-size: large;
+  width: 100%;
+  border: none;
+  outline: 0;
+  transition: all 400ms ease;
+}
+
+#footer__email--button{
+  padding: 16px 40px;
+  background-color: #D5A153;
+  border-color: white;
+  border-radius: 4px;
+  border-style: double;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms ease;
+}
+
+.footer__arrow{
+  margin-left: 6px;;
+  display: flex;
+  font-size: 16px;
+}
+
+/*FOOTER LINKS*/
+
+.footer__bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__quicklinks, .footer__services-wrapper, .footer__news, .footer__contact{
+  margin: 0px 36px;
+}
+
+.footer__section-title{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer__links, .footer__services, .footer__news1{
+  margin-top: 20px;;
+}
+
+.footer__link{
+  font-size: 16px;
+  font-family: "Rubik";
+  margin-block-start: 8px;
+  transition: 300ms ease;
+}
+
+.footer__news{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__news1, .footer__news2{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.footer__news1-title, .footer__calendar-icon{
+  padding: 0px 24px;
+  transition: all 300ms ease
+}
+
+.footer__link{
+  margin-bottom: 16px;
+}
+
+/* HOVER EFFECTS */
+
+.nav__link:hover {
+  color: hsl(36, 61%, 58%);
+}
+
+.footer__link:hover{
+  color: white;
+}
+
+.footer__news1-title:hover{
+  color: hsl(36, 61%, 58%);
+  cursor: pointer;
+}
+
+button:hover, #footer__email--button:hover{
+  background-color: hsl(0, 0%, 12%);
+}
+
+#appointment__submit:hover{
+  background-color: white;
+}
+
+#appointment__submit:hover .appointment__submit--text{
+  color: black;
+}
