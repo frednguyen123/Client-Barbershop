@@ -70,12 +70,20 @@ button{
   font-size: 20px;
 }
 
+body {
+  position: relative;
+}
+
 /* NAV */
 .background__image{
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
   height: 100vh;
+}
+
+.background__image.background__image-offscreen{
+  position: static
 }
 
 .background__image:before {
@@ -106,7 +114,19 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 0px 12px;
+  z-index: 10;
 }
+
+/*STICKY NAV*/
+/* nav and stickly class at the same time */
+.nav__container.sticky {
+  position: fixed;
+  height: 6rem;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+}
+
 
 .nav__logo--title{
   font-size: 30px;
