@@ -44,6 +44,24 @@
                     <button class="nav__button white">
                         APPOINTMENT ->
                     </button>
+
+                    <button class="btn__menu" onclick="openMenu()">
+                        <ion-icon name="menu-outline" aria-hidden="true" role="img" class="menu__icon"></ion-icon>
+                    </button>
+        
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            X
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">HOME</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">SERVICES</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">PRICING</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">GALLARY</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">APPOINTMENT</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -146,7 +164,7 @@
                 <div class="pricing__option-container">
                     <ul class="pricing__service-list">
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('all')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-beauty-salon"></i>
                                 </div>
@@ -154,7 +172,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('beauty')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-relax"></i>
                                 </div>
@@ -162,7 +180,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('body')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-massage"></i>
                                 </div>
@@ -170,7 +188,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('face')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-spa"></i>
                                 </div>
@@ -178,7 +196,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('meditation')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-yoga"></i>
                                 </div>
@@ -186,7 +204,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="pricing__button">
+                            <button class="pricing__button" onclick="filter('shaving')">
                                 <div class="pricing__icon">
                                     <i class="flaticon-razor-blade"></i>
                                 </div>
@@ -194,6 +212,105 @@
                             </button>
                         </li>
                     </ul>
+
+                    <div class="pricing__services">
+                        <div class="pricing__service shaving">
+                            <figure class="pricing__service-figure" style="width: 90; height: 90;">
+                                <img src="./assets/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Hair Cutting & Fitting</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service shaving">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-2.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Shaving & Facial Wash</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service face">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-3.jpg" width="90" height="90" alt="Shaving & Facial Wash"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Hair Color & Wash</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service body">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-4.jpg" width="90" height="90" alt="Hair Color & Wash"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Body Massage</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service beauty">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-5.jpg" width="90" height="90" alt="Body Massage"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Beauty & Spa</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service face">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-6.jpg" width="90" height="90" alt="Beauty & Spa"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Facial & Face Wash</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service body">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-7.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Backbone Massage</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                        <div class="pricing__service meditation">
+                            <figure class="pricing__service-figure" style="--width: 90; --height: 90;">
+                                <img src="./assets/pricing-8.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                    class="pricing__service-img">
+                            </figure>
+            
+                            <div class="pricing__service-text">
+                                <h1 class="pricing__service-title">Meditation & Massage</h3>
+                                <p class="pricing__service-subtitle">Clean & simple 30-40 minutes</p>
+                            </div>
+                            <h1 class="pricing__service-price" value="59">$59</data>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

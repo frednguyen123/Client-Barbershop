@@ -326,6 +326,7 @@ nav{
 .pricing__service-list{
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .pricing__button{
@@ -682,3 +683,230 @@ button:hover, #footer__email--button:hover{
 #appointment__submit:hover .appointment__submit--text{
   color: black;
 }
+
+/* PRICING SERVICES JAVASCRIPT */
+
+.pricing__services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing__service{
+  background-color: hsla(36, 61%, 58%, 0.1);
+  width: 45%;
+  padding: 16px;
+  margin: 12px;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+
+.pricing__service-title{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.pricing__service-subtitle{
+  font-size: 16px;
+  color: #707070;
+}
+
+.pricing__service-price{
+  font-size: 25px;
+  color: #D5A153;
+  font-weight: 500;
+}
+
+.pricing__service-figure{
+  width: 90px; 
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.active{
+  display: inherit;
+}
+
+/*BURGER MENU*/
+.btn__menu{
+  background-color: transparent;
+  font-size: 36px;
+  text-align: center;
+  border: none;
+  color: #D5A153;
+  display: none;
+}
+
+.btn__menu:hover{
+  cursor:pointer
+}
+
+.menu__backdrop{
+  position:absolute;
+  background-color: black;
+  border: 1px solid darkgray;
+  border-radius: 16px;
+  top: 200px;
+  left: 50px;
+  width: 80%;
+  height: 60vh;
+  z-index: 50;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu--open .menu__backdrop{
+  display: flex;
+}
+
+.btn__menu--close{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: #D5A153;
+}
+
+.btn__menu--close:hover{
+  cursor:pointer;
+  color: black;
+}
+
+.menu__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.menu__list{
+  padding: 20px 0;
+}
+
+/*text inside burger menu*/
+.menu__link{
+  font-size: 20px;
+  font-weight: 600;
+  color: #D5A153;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px){
+  .nav__button{
+    visibility: hidden;
+  }
+
+  .appointment__figure{
+    display: none;
+  }
+
+  .pricing__service-list{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .background__image{
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .header__title{
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    max-width: 480px;
+    margin: 24px 0;
+  }
+
+  .services__option-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing__service-list{
+    flex-wrap: wrap;
+  }
+
+  .pricing__service{
+    width: 100%;
+  }
+
+  .gallary__imgs{
+    flex-wrap: wrap;
+  }
+
+  .footer__top{
+    flex-direction: column;
+  }
+
+  .footer__bottom{
+    flex-wrap: wrap;
+  }
+
+  .footer__news, .footer__quicklinks, .footer__services-wrapper{
+    display: none;
+  }
+
+  .btn__menu{
+    display: flex;
+  }
+
+  .nav__links, .nav__button{
+    display: none;
+  }
+}
+
+@media (max-width: 576px){
+  .header__title{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    max-width: 480px;
+    margin: 24px 0;
+  }
+
+  body{
+    width: 100%;
+  }
+
+  .appointment__wrapper{
+    display: none;
+  }
+
+  .footer__email{
+    flex-direction: column;
+  }
+
+  .menu__backdrop{
+
+    top: 100px;
+    left: 25px;
+  }
+
+  #footer__email--button {
+    padding: 8px 12px;
+  }
+
+  .footer__submit--text{
+    font-size: 10px;
+  }
+
+  .footer__arrow{
+    display: none;
+  }
+}
+
+
+
